@@ -1,7 +1,6 @@
-require "rom/arangodb/version"
+require 'rom'
+require 'rom/arangodb/version'
+require 'rom/arangodb/relation'
+require 'rom/arangodb/geteway'
 
-module Rom
-  module Arangodb
-    # Your code goes here...
-  end
-end
+ROM.register_adapter(:arangodb, ROM::Arangodb)
