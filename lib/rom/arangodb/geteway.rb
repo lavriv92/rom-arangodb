@@ -11,19 +11,19 @@ module ROM
           config.username = ''
           config.password = ''
         end
-        @sets = {}
+        @collections = {}
       end
 
       def dataset(name)
-        @sets[name] = Dataset.new([], @connection)
+        @collections[name] = Dataset.new([], @connection)
       end
 
       def []()
-        @sets.fetch(name)
+        @collections.fetch(name)
       end
 
       def dataset?(name)
-        @sets.include?(name)
+        @collections.include?(name)
       end
     end
 
