@@ -1,11 +1,14 @@
 require 'ashikawa-core'
+require 'rom/gateway'
+require 'rom/arangodb/dataset'
+
 
 module ROM
   module Arangodb
 
-    class Geteway < ROM::Geteway
-      def initialize(uri)
-        @connection = Ashikawa::Core::Database do |config|
+    class Gateway < ROM::Gateway
+      def initialize
+        @connection = Ashikawa::Core::Database.new do |config|
           config.url = 'http://localhost:8529'
           config.database_name = 'test_database'
           config.username = ''
@@ -25,6 +28,7 @@ module ROM
       def dataset?(name)
         @collections.include?(name)
       end
+
     end
 
   end
