@@ -1,9 +1,9 @@
 module ROM
   module Mongo
 
-    class Rrelation < ROM::Relation
+    class Relation < ROM::Relation
       adapter :arangodb
-      forward :insert, :find, :without, :skip, :limit
+      forward :load, :all, :execute, :by_example
     end
   end
 end
