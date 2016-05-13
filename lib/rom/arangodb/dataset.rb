@@ -11,7 +11,7 @@ module ROM
       end
 
       def load
-        @collection.load
+        collection.load 
       end
 
       def all
@@ -25,6 +25,7 @@ module ROM
         query.by_example(example)
       end
 
+      private
       def query
         @collection.query
       end
