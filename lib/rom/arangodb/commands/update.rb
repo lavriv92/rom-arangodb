@@ -4,6 +4,14 @@ module ROM
   module Arangodb
     module Commands
       class Update < ROM::Commnds::Update
+        adapter :arangodb
+
+        def collection
+          relation.dataset
+        end
+
+        def execute
+        end
       end
     end
   end
