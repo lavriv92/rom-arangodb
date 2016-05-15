@@ -30,7 +30,7 @@ module ROM
       end
 
       def command_namespase
-        Rom::Arangodb::Commands 
+        Rom::Arangodb::Commands
       end
 
     end
