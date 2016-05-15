@@ -18,6 +18,9 @@ describe 'Arangdb gateway' do
   end
 
   before do
+
+    gateway.connection.create
+
     configuration.relation(:users) do
       def by_name(name)
         find(name)

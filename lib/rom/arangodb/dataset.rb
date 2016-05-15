@@ -10,8 +10,12 @@ module ROM
         @collection = collection
       end
 
+      def find(criteria={})
+        Dataset.new()
+      end
+
       def load
-        collection.load 
+        collection.load
       end
 
       def all

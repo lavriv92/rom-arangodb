@@ -2,14 +2,16 @@ require 'rom/commands'
 
 module ROM
   module Arangodb
-    class Create < ROM::Command::Create
-      adapter :arangodb
+    module Commands
+      class Create < ROM::Command::Create
+        adapter :arangodb
 
-      def collection
-        relation.dataset
-      end
+        def collection
+          relation.dataset
+        end
 
-      def execute(document)
+        def execute(document)
+        end
       end
     end
   end

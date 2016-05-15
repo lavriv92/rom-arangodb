@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 group :test do
+  gem 'inflecto'
   gem 'rspec', '~>3.1'
   gem 'virtus'
 end
