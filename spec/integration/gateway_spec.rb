@@ -33,8 +33,8 @@ describe 'Arangdb gateway' do
 
     configuration.commands(:users) do
       define(:create)
-      define(:update)
-      define(:delete)
+      # define(:update)
+      # define(:delete)
     end
 
     user_model = Class.new do
