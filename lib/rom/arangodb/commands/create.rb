@@ -11,6 +11,7 @@ module ROM
         end
 
         def execute(document)
+          collection.insert(document)
         end
       end
     end

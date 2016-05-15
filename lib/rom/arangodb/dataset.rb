@@ -22,7 +22,8 @@ module ROM
         query.all
       end
 
-      def execute
+      def insert
+
       end
 
       def by_example(example)

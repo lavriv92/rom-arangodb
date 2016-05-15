@@ -33,8 +33,8 @@ describe 'Arangdb gateway' do
 
     configuration.commands(:users) do
       define(:create)
-      # define(:update)
-      # define(:delete)
+      define(:update)
+      define(:delete)
     end
 
     user_model = Class.new do
@@ -58,8 +58,8 @@ describe 'Arangdb gateway' do
       end
     end
 
-    container.relations.users.insert(name: 'Ivan', email: 'ilavriv@example.com')
-    container.relations.users.insert(name: 'User', email: 'user@example.com')
+    # container.relations.users.insert(name: 'Ivan', email: 'ilavriv@example.com')
+    # container.relations.users.insert(name: 'User', email: 'user@example.com')
   end
 
   describe 'test' do

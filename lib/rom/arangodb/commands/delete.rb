@@ -3,7 +3,7 @@ require 'rom/commands'
 module ROM
   module Arangodb
     module Commands
-      class Update < ROM::Commnds::Update
+      class Delete < ROM::Command::Delete
         adapter :arangodb
 
         def collection
