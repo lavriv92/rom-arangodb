@@ -11,11 +11,7 @@ module ROM
       end
 
       def find(criteria={})
-        Dataset.new()
-      end
-
-      def load
-        collection.load
+        []
       end
 
       def all
@@ -23,14 +19,12 @@ module ROM
       end
 
       def insert
-
       end
 
-      def by_example(example)
-        query.by_example(example)
+      def update
       end
 
-      private
+    private
       def query
         @collection.query
       end
