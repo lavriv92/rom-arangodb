@@ -10,7 +10,7 @@ module ROM
         @collection = collection
       end
 
-      def find(criteria={})
+      def find(criteria)
         []
       end
 
@@ -18,7 +18,8 @@ module ROM
         query.all
       end
 
-      def insert
+      def insert(document)
+        @collection.insert(document)
       end
 
       def update
@@ -28,6 +29,7 @@ module ROM
       def query
         @collection.query
       end
+
     end
   end
 end
