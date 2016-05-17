@@ -32,5 +32,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rom-arangodb.
+Bug reports and pull requests are welcome on GitHub at https://github.com/lavriv92/rom-arangodb.
 
