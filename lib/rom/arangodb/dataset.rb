@@ -3,7 +3,6 @@ require 'rom/memory/dataset'
 module ROM
   module Arangodb
     class Dataset
-
       attr_reader :collection
 
       def initialize(collection)
@@ -22,7 +21,8 @@ module ROM
         @collection.insert(document)
       end
 
-      def update
+      def update(document)
+        @collection.update(document)
       end
 
     private
