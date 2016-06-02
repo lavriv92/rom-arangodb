@@ -5,24 +5,9 @@ module ROM
     class Dataset
       attr_reader :collection
 
-      def initialize(collection)
+      def initialize(collection, options={})
         @collection = collection
-      end
-
-      def find(criteria)
-        []
-      end
-
-      def all
-        query.all
-      end
-
-      def insert(document)
-        @collection.insert(document)
-      end
-
-      def update(document)
-        @collection.update(document)
+        super
       end
 
     private
@@ -30,6 +15,8 @@ module ROM
         @collection.query
       end
 
+      def dataset
+      end
     end
   end
 end
